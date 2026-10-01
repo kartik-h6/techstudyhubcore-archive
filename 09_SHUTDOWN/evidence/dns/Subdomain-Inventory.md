@@ -2,7 +2,7 @@
 
 Inventory of the subdomains used by the TechStudyHubCore ecosystem.
 
-**Status: 7 hostnames confirmed** (root, `www`, and five subdomains), from screenshot evidence and the Cloudflare DNS capture. Hosting destinations are partially known.
+**Status: 7 hostnames confirmed** (root, `www`, and five subdomains) by DNS evidence; all six content areas now also have a screenshot.
 
 ## Root domain
 
@@ -22,7 +22,7 @@ Inventory of the subdomains used by the TechStudyHubCore ecosystem.
 | `digitalsetup.techstudyhubcore.in` | Digital Setup service concept | `tshdigitalsetup.netlify…` | `[CAPTURED]` | Screenshot + DNS record |
 | `portfolio.techstudyhubcore.in` | Personal portfolio | `kartik-h-portfolio.netli…` | `[CAPTURED]` | Screenshot + DNS record |
 | `cgpacalculator.techstudyhubcore.in` | SGPA / CGPA calculator utility | `sgpa-cgpa-calculator…` | `[CAPTURED]` | Screenshot + DNS record |
-| `sslc.techstudyhubcore.in` | School-level learning area | CNAME target truncated (DNS only) | `[CAPTURED]` | DNS record |
+| `sslc.techstudyhubcore.in` | School-level learning area | CNAME target truncated (DNS only) | `[CAPTURED]` | Screenshot + DNS record |
 
 ## Known areas of the ecosystem (from the historical documentation)
 
@@ -30,22 +30,23 @@ Inventory of the subdomains used by the TechStudyHubCore ecosystem.
 |---|---|---|
 | Gateway | `techstudyhubcore.in` (root) | `[CAPTURED]` |
 | Pharmacy / B.Pharm | `pharmacy.techstudyhubcore.in` | `[CAPTURED]` |
-| SSLC | `sslc.techstudyhubcore.in` | `[CAPTURED]` (DNS record; no screenshot yet) |
+| SSLC | `sslc.techstudyhubcore.in` | `[CAPTURED]` |
 | Digital Setup | `digitalsetup.techstudyhubcore.in` | `[CAPTURED]` |
 | Portfolio | `portfolio.techstudyhubcore.in` | `[CAPTURED]` |
 | CGPA Calculator | `cgpacalculator.techstudyhubcore.in` | `[CAPTURED]` |
 
 ## Observations
 
-- `pharmacy` and `sslc` were configured **DNS only** (not proxied) while the others were proxied — worth noting as a configuration difference.
+- `pharmacy` and `sslc` were configured **DNS only** (not proxied) while the others were proxied — a configuration difference worth remembering.
 - Two of the CNAME targets are opaque identifiers rather than readable hostnames (truncated in the capture).
+- The root gateway and SSLC screenshots do not show the address bar; their subdomain existence rests on the DNS records rather than the images.
 
 ## Capture metadata
 
 | Field | Value |
 |---|---|
 | Capture date | Evidence uploaded 2026-10-01 (original capture dates not recorded) |
-| Evidence source | Screenshots with visible address bar; Cloudflare DNS Records panel |
+| Evidence source | Screenshots; Cloudflare DNS Records panel |
 | Evidence status | `[CAPTURED]` — 7 hostnames |
 
 ## Reminder
