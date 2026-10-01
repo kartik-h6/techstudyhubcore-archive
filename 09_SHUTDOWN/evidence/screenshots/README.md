@@ -2,7 +2,7 @@
 
 Visual evidence of the TechStudyHubCore sites, captured before the domain expires.
 
-**Status: 4 screenshots captured.**
+**Status: 7 screenshots captured** — 4 site captures published, 3 further captures (gateway, Cloudflare, Netlify) prepared with redactions.
 
 ## Why screenshots matter
 
@@ -10,79 +10,74 @@ When the domain expires, the pages are gone. A screenshot is the only record of 
 
 ## What should be preserved
 
-- **Root gateway** — the front door, full page — *not yet captured*
-- **Major subdomains** — at least one screenshot per published area
-- **Important project pages** — key content pages and utility tools
-- **Mobile view** — where the responsive behaviour matters
-- **Unusual or important UI states** — for example, the gateway's routing cards, or a tool in use
+- **Root gateway** — `[CAPTURED]`
+- **Major subdomains** — pharmacy, digital setup, portfolio, CGPA calculator `[CAPTURED]`; SSLC `[NOT CAPTURED]`
+- **Important project pages** — `[CAPTURED]` (landing pages)
+- **Mobile view** — `[NOT CAPTURED]`
+- **Infrastructure panels** — Cloudflare DNS `[CAPTURED]`, Netlify projects `[CAPTURED]`
 
 ## Capture guidance
 
-- **Keep the browser address bar visible** where it helps prove URL identity. A screenshot that shows both the page and its URL is stronger evidence than the page alone.
+- Keep the browser address bar visible where it helps prove URL identity.
 - Prefer full-page captures over cropped fragments.
-- Where possible, capture desktop and mobile versions of the same page.
+- Capture desktop and mobile versions of the same page where possible.
 - Do not capture anything showing private data, credentials, or personal information.
 
 ## Where the files are stored
 
-The originals are stored as **release assets** on the `archive-evidence-v1` release, not as files in this directory. Binary files of this size cannot be committed through the archive's authoring toolchain.
+The site captures are stored as **release assets** on the `archive-evidence-v1` release, not as files in this directory. Binary files of this size cannot be committed through the archive's authoring toolchain.
 
 Release: https://github.com/kartik-h6/techstudyhubcore-archive/releases/tag/archive-evidence-v1
 
 Each asset is downloadable by its original filename from that release page.
 
-> If the images are later added directly to this folder (for example via the GitHub web interface), update this file to point at the in-repo paths instead.
-
 ## Inventory
 
-| File | Area | URL shown in capture | Resolution | Size | Status |
-|---|---|---|---|---|---|
-| `digitalsetup.techstudyhubcore.in.png` | Digital Setup | `digitalsetup.techstudyhubcore.in` | 1920 × 1080 | 258 KB | `[CAPTURED]` |
-| `pharmacy.techstudyhubcore.in.png` | Pharmacy / B.Pharm | `pharmacy.techstudyhubcore.in` | 1920 × 1080 | 328 KB | `[CAPTURED]` |
-| `portfolio.png` | Portfolio | `portfolio.techstudyhubcore.in` | 1920 × 1080 | 387 KB | `[CAPTURED]` |
-| `cgpacalculator.techstudyhubcore.in.png` | CGPA Calculator | `cgpacalculator.techstudyhubcore.in` | 1920 × 1080 | 221 KB | `[CAPTURED]` |
+| File | Area | URL shown in capture | Status |
+|---|---|---|---|
+| `digitalsetup.techstudyhubcore.in.png` | Digital Setup | `digitalsetup.techstudyhubcore.in` | `[CAPTURED]` |
+| `pharmacy.techstudyhubcore.in.png` | Pharmacy / B.Pharm | `pharmacy.techstudyhubcore.in` | `[CAPTURED]` |
+| `portfolio.png` | Portfolio | `portfolio.techstudyhubcore.in` | `[CAPTURED]` |
+| `cgpacalculator.techstudyhubcore.in.png` | CGPA Calculator | `cgpacalculator.techstudyhubcore.in` | `[CAPTURED]` |
+| `techstudyhubcore.in.png` | Root gateway | `techstudyhubcore.in` | `[CAPTURED]` — pending asset attachment |
+| `cloudfare.png` | Cloudflare DNS panel | `dash.cloudflare.com` (redacted) | `[CAPTURED]` — redacted, pending asset attachment |
+| `netlify.png` | Netlify projects panel | `app.netlify.com/teams/…/projects` | `[CAPTURED]` — redacted, pending asset attachment |
 
-### What each capture shows
+### What the newer captures show
 
-**`digitalsetup.techstudyhubcore.in.png` — Digital Setup landing page.**
-Heading: *Your business is already local. Make it easier to find, trust, and contact.* Navigation: Solutions, How It Works, Live Examples, Pricing, FAQ. Header: TSH Digital Setup logo, light/dark toggle, Start Enquiry button. Subtext describes combining Google search visibility, a mobile-first digital hub, and a direct WhatsApp enquiry flow. Calls to action: *Start Your Digital Setup*, *See Live Examples*. Value points displayed: speak directly with Kartik, no complex software, WhatsApp ready.
+**`techstudyhubcore.in.png` — root gateway.** Heading *TechStudyHubCore*; navigation Explore / About / Contact; tagline *ONE ECOSYSTEM — MULTIPLE FOCUSED SYSTEMS*; prompt *What do you need today?*; description of a clarity-first academic and digital ecosystem; calls to action *Explore Destinations* and *Get Help Finding*. No sensitive content.
 
-**`pharmacy.techstudyhubcore.in.png` — Pharmacy Hub landing page.**
-Heading: *The B.Pharm syllabus, clearly mapped. The tools you actually need.* States that content is built on the official PCI 2026 syllabus. Calls to action: *Download Syllabus*, *CGPA Calculator*. A Resources section with downloadable guides. Dark theme.
+**`cloudfare.png` — Cloudflare DNS panel.** Source for the records recorded in `../dns/DNS-Snapshot.md`. Shows 8 DNS rows and reports 12 of 200 records in use.
 
-**`portfolio.png` — Portfolio homepage.**
-Heading: *B.Pharm Health-Tech AI Specialist*; name KARTIK H. Navigation: About, Case Study, Projects, Visuals, Certs. LinkedIn link and a Resume button. Summary references pharmaceutical science, Generative AI, and Vernacular EdTech. Statistics displayed on the page at capture: 100+ Students Reached, 5 Languages, 3 Live Projects, 2 AI Certs.
+**`netlify.png` — Netlify projects panel.** Source for the project list in `../deployments/Hosting-Inventory.md`. Shows 6 projects.
 
-> The statistics above are recorded as **what the page displayed at the time of capture** — they are the site's own figures, preserved as evidence, and are not independently verified.
+## Redactions applied before publication
 
-**`cgpacalculator.techstudyhubcore.in.png` — SGPA / CGPA calculator.**
-Heading: *Calculate Your SGPA & CGPA Clearly*. Section *1. SGPA Calculator* with a semester dropdown that auto-fills subjects (labelled PCI B.Pharm 2026 NEP Syllabus), plus a table for manual entry of subject names, credits, and grade points. A left sidebar navigation is visible, labelled PMAS-ToC.
+| File | Removed | Reason |
+|---|---|---|
+| `cloudfare.png` | Browser chrome / address bar | It contained a Cloudflare session token and the account ID |
+| `netlify.png` | Sidebar account block | It contained the account holder's name and email address |
+
+Both redactions were verified: no token, account ID, or email remains visible, and the evidence content stays fully readable. The unredacted originals were **not** published and remain with the author.
 
 ## Prohibited content
 
-Screenshots must not contain:
-
-- credentials, tokens, or `.env` values
-- private account pages or exports
-- private patient or academic information
-- anything from an authenticated dashboard that is not public information
-
-**Verification:** all four captures were reviewed and contain no credentials, personal data, or private account details.
+Screenshots must not contain credentials, tokens, `.env` values, private account pages, private patient or academic information, or anything from an authenticated dashboard that is not public information.
 
 ## Capture metadata
 
 | Field | Value |
 |---|---|
-| Capture date | Not recorded (the date the screenshots were taken was not captured). Uploaded to the archive 2026-10-01. |
-| Evidence source | Author's own screenshots of the live sites, with the browser address bar visible |
-| Evidence status | `[CAPTURED]` — 4 files |
+| Capture date | Originals captured by the author (exact date not recorded); uploaded to the archive 2026-10-01 |
+| Evidence source | Author's own screenshots, with the browser address bar visible |
+| Evidence status | `[CAPTURED]` — 7 files |
 
 ## Still to capture
 
-- Root gateway (`techstudyhubcore.in`) — `[NOT CAPTURED]`
-- SSLC — `[NOT CAPTURED]`
+- SSLC page screenshot — `[NOT CAPTURED]`
 - Mobile views — `[NOT CAPTURED]`
-- Any additional project pages — `[NOT CAPTURED]`
+- Cloudflare zone export (all 12 records, untruncated) — `[NOT CAPTURED]`
+- Vercel projects, if any exist — `[NOT CAPTURED]`
 
 ## Reminder
 
