@@ -2,7 +2,7 @@
 
 Inventory of the subdomains used by the TechStudyHubCore ecosystem.
 
-> **Evidence not yet captured.** No subdomains have been verified against the live DNS yet.
+**Status: 4 subdomains confirmed by screenshot evidence; the rest not yet verified.**
 
 ## Root domain
 
@@ -10,45 +10,49 @@ Inventory of the subdomains used by the TechStudyHubCore ecosystem.
 |---|---|
 | Root domain | `techstudyhubcore.in` |
 | Root purpose | Gateway (front door / routing layer) |
-| Root status | Evidence not yet captured. |
+| Root status | Existence documented; not yet confirmed by evidence |
 
-## Active subdomains
+## Confirmed subdomains
 
-| Subdomain | Purpose | Hosting destination | Status | Evidence source |
+Subdomains confirmed to have existed, verified by screenshots in which the browser address bar is visible. Evidence: `archive-evidence-v1` release (see `../screenshots/README.md`).
+
+| Subdomain | Purpose | Hosting destination | Existence | Evidence source |
 |---|---|---|---|---|
-| Evidence not yet captured. | | | `[NOT CAPTURED]` | |
+| `pharmacy.techstudyhubcore.in` | Pharmacy / B.Pharm learning area | Evidence not yet captured. | `[CAPTURED]` | Screenshot, address bar visible |
+| `digitalsetup.techstudyhubcore.in` | Digital Setup service concept | Evidence not yet captured. | `[CAPTURED]` | Screenshot, address bar visible |
+| `portfolio.techstudyhubcore.in` | Personal portfolio | Evidence not yet captured. | `[CAPTURED]` | Screenshot, address bar visible |
+| `cgpacalculator.techstudyhubcore.in` | SGPA / CGPA calculator utility | Evidence not yet captured. | `[CAPTURED]` | Screenshot, address bar visible |
 
-## Historical subdomains
+> The screenshots prove these subdomains **existed and served pages**. They do not establish which hosting platform served them, or the DNS records behind them — those remain `[NOT CAPTURED]`.
 
-Subdomains that existed at some point but may no longer resolve.
+## Unverified subdomains
 
-| Subdomain | Purpose | Hosting destination | Status | Evidence source |
-|---|---|---|---|---|
-| Evidence not yet captured. | | | `[NOT CAPTURED]` | |
+| Subdomain | Purpose | Status |
+|---|---|---|
+| Root gateway (`techstudyhubcore.in`) | Gateway / front door | `[NOT CAPTURED]` |
+| SSLC | School-level learning area | `[NOT CAPTURED]` |
 
 ## Known areas of the ecosystem (from the historical documentation)
 
-These are described in `02_PROJECTS/`. Their subdomain mapping must be confirmed against DNS, not assumed:
+These are described in `02_PROJECTS/`. Their subdomain mapping is confirmed only where evidence exists:
 
 | Area | Subdomain | Confirmed? |
 |---|---|---|
-| Gateway | Evidence not yet captured. | `[NOT CAPTURED]` |
-| Pharmacy / B.Pharm | Evidence not yet captured. | `[NOT CAPTURED]` |
+| Gateway | `techstudyhubcore.in` (root) | `[NOT CAPTURED]` |
+| Pharmacy / B.Pharm | `pharmacy.techstudyhubcore.in` | `[CAPTURED]` |
 | SSLC | Evidence not yet captured. | `[NOT CAPTURED]` |
-| Digital Setup | Evidence not yet captured. | `[NOT CAPTURED]` |
-| Portfolio | Evidence not yet captured. | `[NOT CAPTURED]` |
-| CGPA Calculator | Evidence not yet captured. | `[NOT CAPTURED]` |
-
-> The purpose of each area is documented. Whether each area was ever published on its own subdomain, and where it was hosted, is **not yet verified**.
+| Digital Setup | `digitalsetup.techstudyhubcore.in` | `[CAPTURED]` |
+| Portfolio | `portfolio.techstudyhubcore.in` | `[CAPTURED]` |
+| CGPA Calculator | `cgpacalculator.techstudyhubcore.in` | `[CAPTURED]` |
 
 ## Capture metadata
 
 | Field | Value |
 |---|---|
-| Capture date | Evidence not yet captured. |
-| Evidence source | Evidence not yet captured. (e.g. Cloudflare DNS records; live URL checks) |
-| Evidence status | `[NOT CAPTURED]` |
+| Capture date | Screenshots uploaded 2026-10-01 (original capture date not recorded) |
+| Evidence source | Screenshots with visible address bar; DNS records not yet reviewed |
+| Evidence status | Partial — 4 of the documented areas confirmed |
 
 ## Reminder
 
-A subdomain is recorded here only once it has been observed in DNS or verified live. Do not infer subdomains from the documentation.
+A subdomain is recorded as confirmed here only once it has been observed in evidence (a screenshot with a visible URL, or a DNS record). Do not infer subdomains from the documentation.
